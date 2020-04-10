@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "modal": "/components/comment/comment"
+  },
+  "navigationBarTitleText": "爪子"
+}

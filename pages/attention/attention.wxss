@@ -1,0 +1,36 @@
+.attention_item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.attention_item image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.attention_item .user_item {
+  flex: 1;
+  margin-left: 10px;
+  line-height: 20px;
+}
+
+.attention_item .username {
+  font-size: 15px;
+}
+
+.attention_item .pet {
+  font-size: 13px;
+  color: #999;
+}
+
+.attention_item .attention_btn {
+  font-size: 13px;
+  background: #fdeec3;
+  color: #e8a441;
+  padding: 0 15px;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 5px;
+}

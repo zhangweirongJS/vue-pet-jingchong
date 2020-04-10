@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="add_box" wx:for="{{pet_item}}" wx:key="*this">
+    <navigator url="../pet_message/pet_message?id={{item.id}}">
+      <image class="pet_head" src="{{item.pet_head}}"></image>
+      <view class="pet_msg">
+        <text class="pet_name">{{item.pet_name}}</text>
+        <text class="pet_old">{{item.pet_old}}</text>
+        <view class="pet_variety">{{item.pet_variety}}</view>
+      </view>
+      <icon class="iconfont icon-right"></icon>
+    </navigator>
+  </view>
+
+</view>
+<view class="add_btn_item">
+  <button class="add_btn" form-type="" bindtap="add_pet"> 添加宠物 </button>
+</view>

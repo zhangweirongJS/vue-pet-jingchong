@@ -1,0 +1,132 @@
+<!--index.wxml-->
+<modal hideMask="{{hideMask}}"></modal>
+<modal hideMask="{{hideMaskPhone}}"></modal>
+<view class="container">
+  <view class="weui-tab">
+    <view class="weui-navbar">
+      <block wx:for="{{tabs}}" wx:key="*this">
+        <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+          <view class="weui-navbar__title">{{item}}</view>
+        </view>
+      </block>
+      <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+    </view>
+    <view class="weui-tab__panel">
+      <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+
+        <image class="banner" src="../../images/banner.png"></image>
+
+        <view class="group">
+          <view class="icon_item" bindtap="toTheme">
+            <image class="icon" src="../../images/home_icon1.svg"></image>
+            <text>主题</text>
+          </view>
+          <view class="icon_item" bindtap="toTask">
+            <image class="icon" src="../../images/home_icon2.svg"></image>
+            <text>任务</text>
+          </view>
+          <view class="icon_item">
+            <image class="icon" src="../../images/home_icon3.svg"></image>
+            <text>排行榜</text>
+          </view>
+          <view class="icon_item">
+            <image class="icon" src="../../images/home_icon4.svg"></image>
+            <text>兑换商城</text>
+          </view>
+        </view>
+
+        <view class="content">
+          <view class="title">热门服务</view>
+          <view class="more">更多></view>
+
+          <view class="hot_service">
+            <view class="hot_service_item">
+              <view class="hot_service_img">
+                <image src="../../images/hot_service_img1.svg"></image>
+              </view>
+              <view class="hot_service_img">
+                <image src="../../images/hot_service_img1.svg"></image>
+              </view>
+            </view>
+            <view class="hot_service_item">
+              <view class="hot_service_img">
+                <image src="../../images/hot_service_img1.svg"></image>
+              </view>
+              <view class="hot_service_img">
+                <image src="../../images/hot_service_img1.svg"></image>
+              </view>
+            </view>
+          </view>
+        </view>
+
+        <view class="content">
+          <view class="title">精选视频</view>
+          <view class="video">
+
+            <view class="video_list">
+              <block wx:for="{{video}}" wx:key="*this">
+                <view class="video_item" bindtap="Todetails">
+                  <image class="video_img" mode="widthFix" src="{{item.video_src}}"></image>
+                  <view class="video_content">
+                    <text class="tag">{{item.tag}}</text>
+                    <view class="video_description">{{item.video_description}}</view>
+                    <image class="user_head" src="{{item.user_head}}"></image>
+                    <text class="username">{{item.username}}</text>
+
+                  </view>
+
+                </view>
+              </block>
+            </view>
+
+          </view>
+        </view>
+
+      </view>
+
+      <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+        <view class="video">
+
+          <view class="attention_list">
+            <block wx:for="{{video}}" wx:key="*this">
+              <view class="video_item">
+
+                <image class="video_img" mode="center" src="{{item.video_src}}"></image>
+                <view class="video_content">
+                  <view style="float:left">
+                    <image class="user_head" src="{{item.user_head}}"></image>
+                    <text class="username">{{item.username}}</text>
+                  </view>
+                  <view class="publish_time">{{item.publish_time}}</view>
+
+                  <view style="clear:both">
+                    <text class="tag">{{item.tag}}</text>
+                  </view>
+                  <view class="video_description">{{item.video_description}}
+                  </view>
+                </view>
+
+                <view class="attention_operate">
+                  <view class="operate_item">
+                    <icon class="iconfont icon-mark"></icon>
+                    <text>{{item.mark}}</text>
+                  </view>
+                  <view class="operate_item" bindtap="like" data-index="{{index}}">
+                    <icon class="iconfont {{item.icon_like}}"></icon>
+                    <text>{{item.like}}</text>
+                  </view>
+                  <button open-type="share" class="operate_item">
+                    <icon class="iconfont icon-forward"></icon>
+                    <text>{{item.forward}}</text>
+                  </button>
+                </view>
+              </view>
+            </block>
+          </view>
+
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

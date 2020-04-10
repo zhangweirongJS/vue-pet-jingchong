@@ -1,0 +1,18 @@
+<!-- 获赞 -->
+<scroll-view>
+  <block wx:for="{{awesome}}" wx:key="item">
+    <view bindtouchstart="drawStart" bindtouchmove="drawMove" bindtouchend="drawEnd" style="right:{{item.right}}rpx" data-index="{{index}}" class="attention_item item">
+      <image src="{{item.user_head}}"></image>
+      <view class="user_item">
+        <view class="username">{{item.username}}</view>
+        <text class="product">赞了你的作品"{{item.product}}"</text>
+      </view>
+      <text class="attention_btn">{{item.time}}</text>
+      <view data-index="{{index}}" bindtap="delItem" class="del">删除</view>
+    </view>
+  </block>
+</scroll-view>
+<view class="null_item" hidden="{{con_null}}">
+  <image class="null_img" src="../../images/null_img.png"></image>
+  <text class="null_text">还没有收到赞哦~</text>
+</view>

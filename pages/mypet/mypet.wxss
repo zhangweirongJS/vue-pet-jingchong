@@ -1,0 +1,53 @@
+/* pages/add_pet/add_pet.wxss */
+.container{
+  /* height: 100vh */
+}
+.add_box navigator{
+  background: #fff;
+  box-shadow: 0 3px 8px rgb(235, 235, 235);
+  display: flex;
+  padding: 20px 30px;
+  border-radius: 5px;
+  align-items: center;
+  margin: 10px;
+}
+
+.pet_head {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.pet_msg {
+  margin-left: 15px;
+  line-height: 24px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.pet_name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.pet_old {
+  margin-left: 10px;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 10px;
+  padding: 0 8px;
+  background: #fdd132;
+}
+
+.pet_variety {
+  color: #999;
+  font-size: 13px;
+}
+
+.add_btn_item {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+}

@@ -1,0 +1,34 @@
+<modal hideComment="{{hideComment}}" comment_content="{{comment_content}}"></modal>
+
+<view class="details_img">
+  <image class="" mode="widthFix" src="{{details[0].video_src}}"></image>
+  <view class="details_box">
+    <view class="video_content">
+      <view style="float:left">
+        <image class="user_head" src="{{details[0].user_head}}"></image>
+        <text class="username">{{details[0].username}}</text>
+      </view>
+      <view class="attention {{details[0].click_attention}}" bindtap="click_attention">{{details[0].attention}}</view>
+      <view class="video_description clear">{{details[0].video_description}}
+      </view>
+      <view style="clear:both">
+        <text class="tag">{{details[0].tag}}</text>
+      </view>
+    </view>
+
+    <view class="attention_operate">
+      <view class="operate_item" bindtap="comment">
+        <icon class="iconfont icon-markfill"></icon>
+        <text>{{details[0].mark}}</text>
+      </view>
+      <view class="operate_item" bindtap="like">
+        <icon class="iconfont {{details[0].icon_like}}" style="color:{{details[0].like_color}}"></icon>
+        <text>{{details[0].like}}</text>
+      </view>
+      <button open-type="share" class="operate_item">
+        <icon class="iconfont icon-forwardfill"></icon>
+        <text>{{details[0].forward}}</text>
+      </button>
+    </view>
+  </view>
+</view>

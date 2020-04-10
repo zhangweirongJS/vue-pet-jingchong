@@ -1,0 +1,45 @@
+.works_box {
+  background: #fff;
+  box-shadow: 0 3px 8px rgb(235, 235, 235);
+  display: flex;
+  align-items: center;
+  padding: 10px 25rpx;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.works_box image {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10px;
+}
+
+.works_box .content {
+  margin-left: 30rpx;
+  width: 470rpx;
+  height: 200rpx;
+  font-size: 15px;
+  color: #333;
+  line-height: 24px;
+}
+
+.works_box .time {
+  font-size: 13px;
+  color: #999;
+}
+
+.works_box .upload {
+  text-align: right;
+  float: right;
+  background: #fdd132;
+  font-size: 12px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 0 10px;
+}
+
+.num_watch{
+  font-size: 14px;
+  color: #ccc;
+}

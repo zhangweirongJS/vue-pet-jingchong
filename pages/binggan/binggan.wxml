@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="box">
+    <view class="info">
+      <text class="num">299</text> 小饼干
+    </view>
+    <view class="exchange_button">
+      <text>兑换商城</text>
+      <text>赚小饼干</text>
+    </view>
+  </view>
+  
+  <view class="detail_box">
+    <view class="title">账户明细</view>
+    <view class="detail_line" wx:for="{{details}}" wx:key="*this">
+      <view class="line_left">
+        <view class="detail_title">{{item.detail_title}}</view>
+        <text class="detail_time">{{item.detail_time}}</text>
+      </view>
+      <view class="detail_money">{{item.detail_money}}</view>
+    </view>
+  </view>
+</view>

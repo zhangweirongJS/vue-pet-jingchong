@@ -1,0 +1,82 @@
+/* pages/task/task.wxss */
+
+.header {
+  background: #fdd132;
+  padding: 20px;
+  height: 90px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.mycoin {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 40px;
+  width: 80%;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 8px 8px rgb(235, 235, 235);
+  padding: 20px 5%;
+}
+
+.coin_icon {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+.coin_img {
+  width: 50px;
+  height: 34px;
+  vertical-align: bottom;
+  margin-left: 15px;
+}
+
+.mycoin_title {
+  font-size: 13px;
+  color: #999;
+}
+
+.mycoin_num {
+  font-size: 34px;
+  font-weight: bold;
+  margin-left: 5px;
+  line-height: 50px;
+}
+
+button {
+  background: #ffbc00;
+  font-size: 13px;
+  padding: 0 20px;
+  border: none;
+  box-shadow: 0px 5px 5px rgba(255, 188, 0, 0.5);
+  position: relative;
+  border-radius: 20px;
+}
+
+.task_content {
+  margin-top: 60px;
+}
+
+.task_content image {
+  width: 340rpx;
+  height: 209rpx;
+  border-radius: 10px;
+}
+.task_content .image1{
+  box-shadow: 0px 3px 5px 0px rgba(135, 102, 244, 0.5)
+}
+.task_content .image2{
+  margin-left:30rpx;
+  box-shadow: 0px 3px 5px 0px rgba(255, 188, 0, 0.5);
+
+}
+
+.task_content .image_item {
+  display: inline-block;
+}

@@ -1,0 +1,13 @@
+<view class="container">
+  <block wx:for="{{works}}" wx:key="*this">
+    <view class="works_box">
+      <image src="{{item.work_img}}" mode="aspectFill"></image>
+      <view class="content">
+        <view>{{item.work_con}}</view>
+        <view class="time">{{item.time}}</view>
+        <text class="num_watch">{{item.num_watch}}</text>
+        <text class="upload">{{item.upload}}</text>
+      </view>
+    </view>
+  </block>
+</view>

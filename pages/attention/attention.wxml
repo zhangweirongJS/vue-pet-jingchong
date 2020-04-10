@@ -1,0 +1,15 @@
+<!-- 关注 -->
+<view class="container">
+  <view class="attention_item" wx:for="{{attention_item}}" wx:key="*this">
+    <image src="{{item.user_head}}"></image>
+    <view class="user_item">
+      <view class="username">{{item.username}}</view>
+      <text class="pet">{{item.pet}}</text>
+    </view>
+    <text class="attention_btn" bindtap="cancel_atten" data-id="{{index}}">{{item.atten}}</text>
+  </view>
+  <view class="null_item" hidden="{{con_null}}">
+    <image class="null_img" src="../../images/null_img.png"></image>
+    <text class="null_text">还没有关注人哦~</text>
+  </view>
+</view>

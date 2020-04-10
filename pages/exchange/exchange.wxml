@@ -1,0 +1,24 @@
+<view class="container">
+  <block wx:for="{{exchange}}" wx:key="*this">
+    <view class="time_title">{{item.change_time}}</view>
+    <view class="card">
+      <view class="box">
+        <image class="change_img" src="{{item.change_img}}" mode="aspectFill"></image>
+        <view class="change_msg">
+          <view>{{item.change_title}}</view>
+          <text>{{item.change_binggan}}小饼干</text>
+        </view>
+        <text class="change_btn">{{item.change_success}}</text>
+      </view>
+      <view class="address_msg">
+        <view>收货人:{{item.add_name}} 电话:{{item.add_phone}}</view>
+        <view>收货地址:{{item.address}}</view>
+      </view>
+    </view>
+  </block>
+  <view class="null_item" hidden="{{con_null}}">
+    <image class="null_img" src="../../images/null_img.png"></image>
+    <text class="null_text">还没兑换任何商品，去兑换商城看看吧~</text>
+    <button class="goto">去兑换商城</button>
+  </view>
+</view>

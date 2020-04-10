@@ -1,0 +1,41 @@
+<!-- <view class="head_box">
+  <text class="left_title">头像</text>
+  <image class="userhead" src="../../images/user_head.jpg"></image>
+</view>
+<view class="msg_box">
+  <view class="msg_line">
+    <text class="left_title">头像</text>
+    <text class="right_text">小米煮大米</text>
+  </view>
+  <view class="msg_line">
+    <text class="left_title">性别</text>
+    <text class="right_text">女</text>
+  </view>
+  <view class="msg_line">
+    <text class="left_title">签名</text>
+    <text class="right_text">清茶淡水，尤物最美</text>
+  </view>
+</view>
+<view class="msg_box">
+  <view class="msg_line">
+    <text class="left_title">所在地</text>
+    <text class="right_text">广州</text>
+    <icon class="iconfont icon-right"></icon>
+  </view>
+  <view class="msg_line">
+    <text class="left_title">标签</text>
+    <text class="right_text">音乐</text>
+    <icon class="iconfont icon-right"></icon>
+  </view>
+</view>
+<view class="msg_box" style="text-align: center;">
+  <text class="exit_btn">退出登录</text>
+</view> -->
+<view class="">
+  <view class="card">
+    <view>
+      <image class="userhead" src="../../images/user_head.jpg"></image>
+      <text>用户名</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,207 @@
+@font-face {
+  font-family: 'iconfont'; /* project id 676225 */
+  src: url('//at.alicdn.com/t/font_676225_xk1wrpd6u.eot');
+  src: url('//at.alicdn.com/t/font_676225_xk1wrpd6u.eot?#iefix') format('embedded-opentype'),
+         url('//at.alicdn.com/t/font_676225_xk1wrpd6u.woff2') format('woff2'),
+         url('//at.alicdn.com/t/font_676225_xk1wrpd6u.woff') format('woff'),
+         url('//at.alicdn.com/t/font_676225_xk1wrpd6u.ttf') format('truetype'),
+         url('//at.alicdn.com/t/font_676225_xk1wrpd6u.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-likefill:before {
+  content: "\e668";
+}
+
+.icon-like:before {
+  content: "\e669";
+}
+
+.icon-forwardfill:before {
+  content: "\e6ea";
+}
+
+.icon-forward:before {
+  content: "\e6eb";
+}
+
+.icon-markfill:before {
+  content: "\e730";
+}
+
+.icon-mark:before {
+  content: "\e731";
+}
+
+.icon-right:before {
+  content: "\e6a3";
+}
+
+.icon-you:before {
+  content: "\e626";
+}
+
+.icon-close:before {
+  content: "\e646";
+}
+
+/**app.wxss**/
+
+.null_item {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.null_img {
+  width: 180px;
+  height: 180px;
+}
+
+.null_text {
+  font-size: 15px;
+  line-height: 50px;
+  display: block;
+}
+
+.clear {
+  clear: both;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; *//* justify-content: space-between; */
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+
+.container .banner {
+  width: 100%;
+  height: 350rpx;
+  background-color: #eee;
+  border-radius: 10px;
+  box-shadow: 0px 6px 5px rgba(65, 174, 220, 0.2);
+}
+
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  border-left: 3px solid #ffbc00;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+/* 个人中心-line */
+
+.line {
+  display: flex;
+  line-height: 30px;
+  font-size: 14px;
+  align-items: center;
+}
+
+.line_item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  margin: 10px 0;
+}
+
+.line_title {
+  font-weight: bold;
+}
+
+.line .choose_icon {
+  width: 25px;
+  height: 25px;
+  margin: 0 5px;
+}
+
+.line_type {
+  color: #888;
+  text-align: right;
+  margin-right: 5px;
+}
+
+.icon-right {
+  font-size: 16px;
+  color: #999;
+}
+
+/* 提交按钮 */
+
+button.submit, button.add_btn {
+  margin: 50px 20px;
+  background: #ffbc00;
+  font-size: 15px;
+  padding: 5px 0;
+  border: none;
+  box-shadow: 0px 0px 4px rgba(255, 188, 0, 0.5);
+  position: relative;
+}
+
+/* index-视频精选 */
+
+.video_list {
+  clear: both;
+  /* display: flex; *//* align-items: center; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.video_list .video_item, .attention_list .video_item {
+  background: #fff;
+  box-shadow: 0px 5px 5px rgba(128, 128, 128, 0.2);
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.video_content {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.video_item .video_description {
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.video_item .tag {
+  background: #ffbc00;
+  min-width: 50px;
+  font-size: 12px;
+  padding: 3px 5px;
+  border-radius: 5px;
+  line-height: 30px;
+}
+
+.video_item .user_head {
+  width: 45rpx;
+  height: 45rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-bottom: 5px;
+}
+
+.video_item .username {
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+.video_item .video_img {
+  width: 340rpx;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}

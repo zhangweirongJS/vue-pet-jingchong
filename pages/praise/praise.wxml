@@ -1,0 +1,50 @@
+<view class="container">
+  <view class="weui-tab">
+    <view class="weui-navbar">
+      <block wx:for="{{tabs}}" wx:key="*this">
+        <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+          <view class="weui-navbar__title">{{item}} {{num_video[index]}}</view>
+        </view>
+      </block>
+      <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+    </view>
+    <view class="weui-tab__panel">
+      <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+        <view class="video">
+          <view class="video_list">
+            <block wx:for="{{video}}" wx:key="*this">
+              <view class="video_item" bindtap="Todetails">
+                <image class="video_img" mode="widthFix" src="{{item.video_src}}"></image>
+                <view class="video_content">
+                  <text class="tag">{{item.tag}}</text>
+                  <view class="video_description">{{item.video_description}}</view>
+                  <image class="user_head" src="{{item.user_head}}"></image>
+                  <text class="username">{{item.username}}</text>
+                </view>
+              </view>
+            </block>
+          </view>
+        </view>
+      </view>
+
+      <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+        <view class="video">
+          <view class="video_list">
+            <block wx:for="{{video}}" wx:key="*this">
+              <view class="video_item" bindtap="Todetails">
+                <image class="video_img" mode="widthFix" src="{{item.video_src}}"></image>
+                <view class="video_content">
+                  <text class="tag">{{item.tag}}</text>
+                  <icon bindtap="like" class="iconfont {{item.icon_like}}" data-index="{{index}}"></icon>
+                  <view class="video_description">{{item.video_description}}</view>
+                    <image class="user_head" src="{{item.user_head}}"></image>
+                    <text class="username">{{item.username}}</text>
+                </view>
+              </view>
+            </block>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

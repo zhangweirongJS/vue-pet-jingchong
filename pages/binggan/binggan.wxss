@@ -1,0 +1,64 @@
+.box {
+  background:#fdd132;
+  padding: 25px 20px 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px rgba(255, 188, 0);
+}
+
+.info {
+  font-size: 14px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.info .num {
+  font-size: 35px;
+  color: #fff;
+  line-height: 50px;
+}
+
+.exchange_button {
+  text-align: right;
+  line-height: 40px;
+}
+
+.exchange_button text {
+  font-size: 14px;
+  color: #fdd132;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px;
+  background: #fff;
+
+}
+
+.detail_box {
+  margin: 20px 0;
+}
+
+.detail_line {
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+}
+
+.detail_line .detail_title {
+  font-size: 15px;
+  color: #333;
+}
+
+.detail_line .line_left {
+  line-height: 25px;
+}
+
+.detail_line .detail_time {
+  font-size: 13px;
+  color: #999;
+}
+
+.detail_line .detail_money {
+  font-size: 18px;
+  color: #fdd132;
+}

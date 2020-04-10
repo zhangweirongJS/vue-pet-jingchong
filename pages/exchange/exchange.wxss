@@ -1,0 +1,61 @@
+/* pages/exchange/exchange.wxss */
+
+.goto {
+  display: inline;
+  font-size: 14px;
+  padding: 5px 40px;
+  background: #ffbc00;
+  color: #fff;
+}
+
+.time_title {
+  font-size: 14px;
+  font-weight: bold;
+  border-left: 3px solid #ffbc00;
+  padding-left: 10px;
+  margin: 10px;
+}
+
+.card {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgb(235, 235, 235);
+  margin: 10px;
+}
+
+.box {
+  display: flex;
+  align-items: flex-end;
+}
+
+.change_img {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+}
+
+.change_msg {
+  font-size: 14px;
+  line-height: 40px;
+  margin-left: 10px;
+}
+
+.change_msg text {
+  color: #ffbc00;
+}
+
+.change_btn {
+  margin-left: auto;
+  background: #ffbc00;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+
+.address_msg {
+  font-size: 13px;
+  color: #999;
+  margin-top: 10px;
+  line-height: 30px;
+}

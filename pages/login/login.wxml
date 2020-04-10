@@ -1,0 +1,10 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+  <text class="login_title">Login In</text>
+  <form bindsubmit="formSubmit">
+    <input bindinput='loginPhone' type="text" class="login_input" placeholder="请输入手机号" placeholder-style="color:#999; font-size: 14px;"></input>
+    <input bindinput='loginPwd' type="password" class="login_input" placeholder="请输入密码" placeholder-style="color:#999; font-size: 14px;"></input>
+    <text class="msg">*仅支持手机登录</text>
+    <button type="" loading="{{loading}}" class="login_btn" bindtap="loginBtnClick">登录</button>
+  </form>
+</view>

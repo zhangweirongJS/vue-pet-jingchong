@@ -1,0 +1,117 @@
+<view class="usercenter" wx:if="{{user_msg}}">
+  <view class="header">
+    <view class="header_item">
+      <image class="header-img" src="{{header_img}}" bindtap="toUsermsg"></image>
+
+      <view class="username_item">
+        <view class="username">{{username}}</view>
+        <view class="message">
+          <text>宠物</text>
+          <text class="num">{{pet}}</text>
+        </view>
+        <view class="message" style="margin-left:10px;">
+          <text>作品</text>
+          <text class="num">{{product}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="user_data">
+    <block wx:for="{{user_data}}" wx:key="*this">
+      <navigator class="data_item" url="{{item.url}}">
+        <text class="digital">{{item.digital}}</text>
+        <text class="data_title">{{item.data_title}}</text>
+      </navigator>
+    </block>
+  </view>
+</view>
+<view class="usercenter" wx:elif="{{hasUserInfo}}">
+  <view class="header">
+    <view class="header_item">
+      <!-- <open-data type="userAvatarUrl"></open-data> -->
+      <image class="header-img" src="{{userInfo.avatarUrl}}" bindtap="toUsermsg"></image>
+
+      <view class="username_item">
+        <view class="username">{{userInfo.nickName}}</view>
+        <view class="message">
+          <text>宠物</text>
+          <text class="num">{{pet}}</text>
+        </view>
+        <view class="message" style="margin-left:10px;">
+          <text>作品</text>
+          <text class="num">{{product}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="user_data">
+    <block wx:for="{{user_data}}" wx:key="*this">
+      <navigator class="data_item" url="{{item.url}}">
+        <text class="digital">{{item.digital}}</text>
+        <text class="data_title">{{item.data_title}}</text>
+      </navigator>
+    </block>
+  </view>
+</view>
+<view class="usercenter" wx:else>
+  <view class="header">
+    <view class="header_item">
+      <image class="header-img" src="../../images/tourist.svg"></image>
+      <view class="username_item">
+        <view class="username">游客</view>
+        <view class="message">
+          <text>宠物</text>
+          <text class="num">0</text>
+        </view>
+        <view class="message" style="margin-left:10px;">
+          <text>作品</text>
+          <text class="num">0</text>
+        </view>
+      </view>
+      <view class="tourist_btn">
+        <button type="default" bindtap="toLogin">请登录</button>
+      </view>
+    </view>
+  </view>
+  <view class="user_data">
+    <view class="data_item" wx:for="{{user_data}}" wx:key="*this">
+      <text class="digital">0</text>
+      <text class="data_title">{{item.data_title}}</text>
+    </view>
+  </view>
+</view>
+
+<view class="container user_line">
+  <block wx:if="{{user_msg}}">
+    <view wx:for="{{line_choose}}" wx:key="*this">
+      <navigator class="line" url="{{item.url}}">
+        <image class="choose_icon" src="{{item.choose_icon}}"></image>
+        <view class="line_item line_title">{{item.title}}</view>
+        <icon class="iconfont icon-you"></icon>
+      </navigator>
+    </view>
+    <view class="line" bindtap="logout">
+      <image class="choose_icon" src="../../images/exit.svg"></image>
+      <view class="line_item line_title">退出登录</view>
+      <icon class="iconfont icon-you"></icon>
+    </view>
+  </block>
+  <block wx:elif="{{hasUserInfo}}">
+    <view wx:for="{{line_choose}}" wx:key="*this">
+      <navigator class="line" url="{{item.url}}">
+        <image class="choose_icon" src="{{item.choose_icon}}"></image>
+        <view class="line_item line_title">{{item.title}}</view>
+        <icon class="iconfont icon-you"></icon>
+      </navigator>
+    </view>
+  </block>
+  <block wx:else>
+    <view wx:for="{{line_choose}}" wx:key="*this">
+      <view class="line" bindtap="loginTip">
+        <image class="choose_icon" src="{{item.choose_icon}}"></image>
+        <view class="line_item line_title">{{item.title}}</view>
+        <icon class="iconfont icon-you"></icon>
+      </view>
+    </view>
+  </block>
+</view>

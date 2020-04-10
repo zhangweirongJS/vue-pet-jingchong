@@ -1,0 +1,27 @@
+<!--components/comment/comment.wxml-->
+<view hidden="{{hideComment}}" class="Comment_mask">
+  <view class="comment_box">
+    <view class="comment_title">
+      <text>{{all_comment}}条评论</text>
+      <icon class="iconfont icon-close" bindtap="close_comment"></icon>
+    </view>
+    <view class="comment_content" style='height:{{height}}'>
+      <block wx:for="{{comment_content}}" wx:key="*this">
+
+        <view class="comment_item">
+          <image src="{{item.userhead}}"></image>
+          <view class="user_item">
+            <view class="username">{{item.username}}</view>
+            <text class="content">{{item.comment_info}}</text>
+          </view>
+        </view>
+      </block>
+
+    </view>
+    <view class="comment_input">
+      <input placeholder="输入内容"></input>
+      <button class="send_btn">发送</button>
+    </view>
+  </view>
+
+</view>

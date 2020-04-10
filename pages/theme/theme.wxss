@@ -1,0 +1,37 @@
+/* pages/theme/theme.wxss */
+
+.theme_banner {
+  margin-bottom: 15px;
+}
+
+.theme_box {
+  margin: 10px 0;
+  padding: 15px;
+  box-shadow: 0 3px 8px rgb(235, 235, 235);
+  line-height: 28px;
+  border-radius: 6px;
+}
+
+.theme_title {
+  font-size: 16px;
+}
+
+.theme_line {
+  display: flex;
+  align-items: center;
+}
+
+.theme_num {
+  font-size: 13px;
+  color: #999;
+  flex: 1;
+}
+
+.theme_btn {
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #ffbc00;
+  font-size: 13px;
+  padding: 0 10px;
+}

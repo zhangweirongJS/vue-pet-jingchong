@@ -1,0 +1,31 @@
+<!--pages/add_pet/add_pet.wxml-->
+<view class="container">
+  <view class="add_head">
+    <image src="{{img}}" bindtap="choosePet" mode="aspectFill"></image>
+    <view class="tips">编辑宠物照片</view>
+  </view>
+  <view class="input-line">
+    <text>昵称</text>
+    <input type="text" placeholder="请输入宠物昵称" placeholder-style="color:#666s; font-size:13px" />
+  </view>
+  <view class="input-line">
+    <text>性别</text>
+    <picker bindchange="chooseSex" value="{{Sex_index}}" range="{{choose_sex}}" class="line_choose">
+      <view class="choose">{{choose_sex[Sex_index]}}</view>
+    </picker>
+    <icon class="iconfont icon-right"></icon>
+  </view>
+  <view class="input-line">
+    <text>品种</text>
+    <input type="text" placeholder="请输入宠物品种" placeholder-style="color:#666; font-size:13px" />
+    <icon class="iconfont icon-right"></icon>
+  </view>
+  <view class="input-line">
+    <text>生日</text>
+    <picker mode="date" value="{{date}}" bindchange="chooseDate" class="line_choose">
+      <view class="choose">{{date}}</view>
+    </picker>
+    <icon class="iconfont icon-right"></icon>
+  </view>
+  <button class="submit" form-type="submit"> 添加宠物 </button>
+</view>

@@ -1,0 +1,30 @@
+<modal hideMask="{{hideMask}}"></modal>
+<modal hideMask="{{hideMaskPhone}}"></modal>
+<view class="container">
+  <form bindsubmit="formSubmit">
+    <textarea placeholder="描述一下你的作品，能让更多人看到哦~" placeholder-style="color:#999; font-size: 13px;" name="textarea" bindinput="textarea"/>
+    <view class="choose_photo">
+      <image bindtap="chooseImage" src="{{src}}" mode="aspectFit"></image>
+    </view>
+    <view>
+      <view class="line">
+        <image class="choose_icon" src="../../images/choose_pet.svg"></image>
+        <view class="line_item line_title">{{titleArr[0]}}</view>
+        <picker bindchange="changePet" value="{{pet_index}}" range="{{choose_pet}}">
+          <view class="line_item line_type">{{choose_pet[pet_index]}}</view>
+        </picker>
+        <icon class="iconfont icon-right"></icon>
+      </view>
+      <view class="line">
+        <image class="choose_icon" src="../../images/choose_tag.svg"></image>
+        <view class="line_item line_title">{{titleArr[1]}}</view>
+        <picker bindchange="changeTag" value="{{tag_index}}" range="{{choose_tag}}">
+          <view class="line_item line_type">{{choose_tag[tag_index]}}</view>
+        </picker>
+        <icon class="iconfont icon-right"></icon>
+      </view>
+    </view>
+
+    <button class="submit" form-type="submit" bindtap="publish"> 发布 </button>
+  </form>
+</view>

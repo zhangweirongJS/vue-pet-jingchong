@@ -1,0 +1,30 @@
+/* pages/login/login.wxss */
+.login_title{
+  text-align: center;
+  font-size: 34px;
+  color: #ffbc00;
+  font-weight: bold;
+  margin: 30px 0;
+}
+.login_input {
+  line-height: 40px;
+  padding: 15px 5px;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+}
+
+.msg {
+  font-size: 13px;
+  color: #999;
+  line-height: 50px;
+}
+
+.login_btn {
+  background: #ffbc00;
+  padding: 5px 0;
+  border: none;
+  box-shadow: 0px 0px 4px rgba(255, 188, 0, 0.5);
+  font-size: 15px;
+  margin:20px;
+  
+}

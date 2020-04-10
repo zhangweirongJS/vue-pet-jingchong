@@ -1,0 +1,26 @@
+/* pages/publish/publish.wxss */
+
+textarea {
+  width: 100%;
+  height: 120px;
+  font-size: 14px;
+  color: #333;
+  line-height: 22px;
+}
+
+.choose_photo {
+  margin: 10px 0;
+  background: #fff;
+  width: 300rpx;
+  height: 300rpx;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgb(235, 235, 235);
+}
+
+.choose_photo image {
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+  vertical-align: middle;
+}

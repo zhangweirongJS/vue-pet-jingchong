@@ -1,0 +1,60 @@
+/* pages/user_message/user_message.wxss */
+
+page {
+  background: #f6f7f9;
+}
+
+.head_box {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 20px 10px;
+  margin-bottom: 10px;
+}
+
+.userhead {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.left_title {
+  font-size: 15px;
+  flex: 1;
+}
+
+.right_text {
+  font-size: 14px;
+  color: #999;
+}
+
+.msg_box {
+  background: #fff;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+.msg_line {
+  display: flex;
+  border-bottom: 1px solid #f2f2f2;
+  /* padding: 20px 0; */
+  line-height: 50px;
+  align-items: center;
+}
+
+.msg_line:last-child {
+  border-bottom: none;
+}
+
+.msg_line .left_title {
+  flex: 1;
+}
+
+.msg_line .right_text {
+  margin-right: 5px;
+}
+
+.exit_btn {
+  font-size: 14px;
+  line-height: 50px;
+}

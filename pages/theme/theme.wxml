@@ -1,0 +1,12 @@
+<view class="container">
+  <image class="banner theme_banner" src="../../images/banner.png"></image>
+
+  <view class="theme_box" wx:for="{{theme}}" wx:key="*this">
+    <view class="theme_title">{{item.theme_title}}</view>
+    <view class="theme_line">
+      <text class="theme_num">#{{item.theme_num}}人参加</text>
+      <text class="theme_btn" bindtap="toPublish" data-index="{{index}}">立即参与</text>
+    </view>
+  </view>
+
+</view>

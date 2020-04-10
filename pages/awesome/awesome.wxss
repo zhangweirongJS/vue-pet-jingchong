@@ -1,0 +1,55 @@
+.attention_item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.attention_item image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 15px;
+}
+
+.attention_item .user_item {
+  flex: 1;
+  margin-left: 10px;
+  line-height: 20px;
+}
+
+.attention_item .username {
+  font-size: 15px;
+}
+
+.attention_item .product {
+  font-size: 13px;
+  color: #aaa;
+}
+
+.attention_item .attention_btn {
+  font-size: 12px;
+  padding: 0 15px;
+  height: 24px;
+  line-height: 24px;
+  color: #aaa;
+}
+
+.item {
+  height: 120rpx;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.del {
+  width: 160rpx;
+  height: 100%;
+  background-color: red;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: -160rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

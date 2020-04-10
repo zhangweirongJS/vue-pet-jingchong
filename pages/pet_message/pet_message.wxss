@@ -1,0 +1,79 @@
+/* pages/pet_message/pet_message.wxss */
+
+.pet_detail {
+  position: relative;
+}
+
+.header {
+  background: #fdd132;
+  padding: 20px;
+  height: 100px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.user_data {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 40px;
+  width: 70%;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 8px rgb(235, 235, 235);
+  padding: 0 10%;
+}
+
+.pet_head {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  position: absolute;
+  top: -30px;
+}
+
+.data_item {
+  margin: 40px 0 10px 0;
+  text-align: center;
+  line-height: 30px;
+}
+
+.data_item .pet_name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.data_item .pet_variety {
+  font-size: 13px;
+  color: #666;
+  margin: 0 5px;
+}
+
+.data_item .pet_sex, .data_item .pet_old, .data_item .pet_zan {
+  font-size: 12px;
+  color: #fff;
+  margin: 5px;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+
+.data_item .pet_sex {
+  background: #8564f0;
+}
+
+.data_item .pet_old {
+  background: #fdd132;
+}
+.pet_zan{
+  background: #e5e8f2;
+  color: #999 !important;
+}
+.pet_item{
+  margin-top: 70px;
+}
+

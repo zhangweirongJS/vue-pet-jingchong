@@ -1,0 +1,58 @@
+/* pages/add_pet/add_pet.wxss */
+
+.add_head {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.add_head image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid #eee;
+}
+
+.add_head .tips {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #999;
+}
+
+.input-line {
+  display: flex;
+  margin: 15px 0;
+  align-items: center;
+  line-height: 30px;
+}
+
+.input-line text {
+  font-size: 15px;
+  width: 80rpx;
+}
+
+.input-line input {
+  /* border-bottom: 1px solid #eee; */
+  margin-left: 20px;
+  width: 590rpx;
+  font-size: 14px;
+  color: #333;
+}
+
+.icon-right {
+  font-size: 16px;
+  color: #999;
+}
+
+.line_choose {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  padding-right: 5px;
+  margin-left: 20px;
+  color: #999;
+}
+
+.line_choose .choose {
+  font-size: 14px;
+  color: #666;
+}
